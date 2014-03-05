@@ -61,7 +61,7 @@ protected:
 	CXMPPStanza *m_pParent;
 	MCString m_msAttributes;
 
-	vector<CXMPPStanza*> m_vChildren;
+	std::vector<CXMPPStanza*> m_vChildren;
 };
 
 #endif

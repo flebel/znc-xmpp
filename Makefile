@@ -1,6 +1,6 @@
 CXX := g++
-CXXFLAGS := -I/usr/include/libxml2 -fPIC
-LIBS := -lxml2
+CXXFLAGS := -I/usr/local/include/libxml2/ -I/usr/local/include/ -fPIC
+LIBS := -L/usr/local/lib -lxml2 -lz -L/usr/local/lib -liconv -lm
 
 SRCS := Stanza.cpp Socket.cpp Client.cpp Listener.cpp JID.cpp xmpp.cpp
 SRCS := $(addprefix src/,$(SRCS))
